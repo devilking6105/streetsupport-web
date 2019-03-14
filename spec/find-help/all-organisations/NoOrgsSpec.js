@@ -16,7 +16,7 @@ describe('all organisations', () => {
     'latitude': 567.8,
     'isPublic': true,
     'isSelectableInBody': false,
-    'postcode': 'M1 2HX'
+    'postcode': '08005'
   }
 
   let ajaxStub = null
