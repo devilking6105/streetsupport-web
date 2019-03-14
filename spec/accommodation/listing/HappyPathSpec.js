@@ -122,7 +122,7 @@ describe('Accommodation - Listing', function () {
   })
 
   it('- should format address', () => {
-    expect(sut.items()[0].address()).toEqual('street line 1, street line 2, manchester. m15 4qx')
+    expect(sut.items()[0].address()).toEqual('street line 1, street line 2, barnegat. 08005')
   })
 
   it('- should map additionalInfo', () => {
