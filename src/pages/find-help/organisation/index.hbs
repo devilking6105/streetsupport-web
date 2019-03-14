@@ -1,12 +1,12 @@
 ---
-title: Organisation - Street Support
-description: Street support makes it easier to help people facing homelessness.
+title: Organization - HTHW
+description: HTHW makes it easier to help people facing homelessness.
 image: https://streetsupport.net/assets/img/og/street-support.jpg
 layout: default.hbs
 permalink: false
-jsBundle: organisation
+jsBundle: organization
 section: findhelp
-page: organisation
+page: organization
 ---
 
 {{> no-js}}
@@ -16,11 +16,11 @@ page: organisation
 <div class="block">
   <div class="container">
     <div class="block__content">
-      <div id="js-organisation-output" class="template"></div>
+      <div id="js-organization-output" class="template"></div>
       <div id="js-accommodation-output"></div>
       <div id="js-contact-output"></div>
 
-    <p class="text-center">Please note, the information here is provided and maintained by this organisation. If you see anything that is incorrect or incomplete, please <a href="/about/contact/">get in touch</a>.</p>
+    <p class="text-center">Please note, the information here is provided and maintained by this organization. If you see anything that is incorrect or incomplete, please <a href="/about/contact/">get in touch</a>.</p>
     {{> social-share}}
     </div>
   </div>
@@ -34,7 +34,7 @@ page: organisation
       <ol class="breadcrumbs__list">
         <li class="breadcrumbs__item"><a href="/">Home</a></li>
         <li class="breadcrumbs__item"><a href="/find-help/">Find Help</a></li>
-        \{{#organisation}}
+        \{{#organization}}
         <li class="breadcrumbs__item">\{{{name}}}</li>
         \{{/organisation}}
       </ol>
@@ -45,21 +45,21 @@ page: organisation
 <script id="js-header-tpl" type="text/template">
   <div class="block block--header">
     <div class="container">
-      \{{#organisation}}
+      \{{#organization}}
         <h1 class="h1 block__header">\{{{name}}}</h1>
         \{{^isVerified}}
         <h2 class="h2 block__sub-header">
           information under review
         </h2>
         \{{/isVerified}}
-      \{{/organisation}}
+      \{{/organization}}
     </div>
   </div>
 </script>
 
-<script id="js-organisation-tpl" type="text/template">
+<script id="js-organization-tpl" type="text/template">
   <div class="result-detail">
-    \{{#organisation}}
+    \{{#organization}}
       <h3 class="h3">\{{{shortDescription}}}</h3>
       \{{{description}}}
       <ul class="result-detail__provider-tag-list">
@@ -102,7 +102,7 @@ page: organisation
         \{{#hasServices}}
         <h4 class="h4">Services Provided</h4>
         <div class="accordion__incopy">
-          <div class="accordion accordion--organisation js-accordion">
+          <div class="accordion accordion--organization js-accordion">
             \{{#services}}
               <button class="h3 accordion__header js-header">
                 \{{{name}}}
@@ -129,7 +129,7 @@ page: organisation
                       <li class="result-detail__address-item">\{{#street}} \{{{street}}}, \{{/street}} \{{#street1}} \{{{street1}}}, \{{/street1}} \{{#street2}} \{{{street2}}}, \{{/street2}}
                       \{{#street3}} \{{{street3}}}, \{{/street3}}</li>
                       <li class="result-detail__address-item">\{{#city}} \{{city}}, \{{/city}}</li>
-                      <li class="result-detail__address-item">\{{#postcode}} \{{postcode}} \{{/postcode}} - <a href="https://www.google.co.uk/maps/place/\{{postcode}}">Map</a></li>
+                      <li class="result-detail__address-item">\{{#postcode}} \{{postcode}} \{{/postcode}} - <a href="https://www.google.co.us/maps/place/\{{postcode}}">Map</a></li>
                     </ul>
                     \{{/street}}
                     \{{#telephone}}
@@ -161,7 +161,7 @@ page: organisation
       \{{#hasOtherServices}}
       <h2 class="h2">Services Provided at Other Locations</h2>
       <div class="accordion__incopy">
-        <div class="accordion accordion--organisation js-accordion">
+        <div class="accordion accordion--organization js-accordion">
           \{{#providedServices}}
             <button class="h3 accordion__header js-header">
               \{{{name}}}
@@ -182,7 +182,7 @@ page: organisation
                     <li class="result-detail__address-item">\{{#street}} \{{{street}}}, \{{/street}} \{{#street1}} \{{{street1}}}, \{{/street1}} \{{#street2}} \{{{street2}}}, \{{/street2}}
                     \{{#street3}} \{{{street3}}}, \{{/street3}}</li>
                     <li class="result-detail__address-item">\{{#city}} \{{city}}, \{{/city}}</li>
-                    <li class="result-detail__address-item">\{{#postcode}} \{{postcode}} \{{/postcode}} - <a href="https://www.google.co.uk/maps/place/\{{postcode}}">Map</a></li>
+                    <li class="result-detail__address-item">\{{#postcode}} \{{postcode}} \{{/postcode}} - <a href="https://www.google.co.us/maps/place/\{{postcode}}">Map</a></li>
                   </ul>
                   \{{/street}}
                 \{{/address}}
@@ -199,7 +199,7 @@ page: organisation
         </div>
       </div>
       \{{/hasOtherServices}}
-    \{{/organisation}}
+    \{{/organization}}
   </div>
 </script>
 
@@ -255,5 +255,5 @@ page: organisation
         <dd class="result-detail__contact-item"><a href="\{{facebook}}">Facebook page</a></dd>
       \{{/facebook}}
     </dl>
-  \{{/organisation}}
+  \{{/organization}}
 </script>
