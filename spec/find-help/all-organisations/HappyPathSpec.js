@@ -18,7 +18,7 @@ describe('all organisations', () => {
     'latitude': 567.8,
     'isPublic': true,
     'isSelectableInBody': false,
-    'postcode': 'M1 2HX'
+    'postcode': '08005'
   }
 
   let ajaxStub = null
@@ -108,13 +108,13 @@ describe('all organisations', () => {
 
   it('- should assign distance in metres of nearest location', () => {
     const org = sut.organisations()
-      .find((o) => o.key === 'rise-manchester')
+      .find((o) => o.key === 'rise-barnegat')
     expect(org.distanceInMetres).toEqual(9592950)
   })
 
   it('- should assign distance away description of nearest location', () => {
     const org = sut.organisations()
-      .find((o) => o.key === 'rise-manchester')
+      .find((o) => o.key === 'rise-barnegat')
     expect(org.distanceDescription).toEqual('9592.95 km away')
   })
 
