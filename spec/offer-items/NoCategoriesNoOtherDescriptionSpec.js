@@ -28,7 +28,7 @@ describe('Offer Items - No Categories, No Other Description', () => {
     postStub = sinon
       .stub(postToApi, 'post')
 
-    model = new Model('manchester')
+    model = new Model('barnegat')
 
     model.firstName('first')
     model.lastName('last')
