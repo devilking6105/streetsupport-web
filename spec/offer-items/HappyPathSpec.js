@@ -18,7 +18,7 @@ describe('Offer Items', () => {
     sinon.stub(browser, 'jumpTo')
     sinon.stub(browser, 'scrollTo')
 
-    model = new Model('manchester')
+    model = new Model('barnegat')
   })
 
   afterAll(() => {
@@ -76,7 +76,7 @@ describe('Offer Items', () => {
           'LastName': 'last',
           'Email': 'email@test.com',
           'Telephone': '',
-          'City': 'manchester',
+          'City': 'barnegat',
           'Postcode': 'postcode',
           'Description': 'description',
           'AdditionalInfo': '',
