@@ -17,7 +17,7 @@ describe('Offer Items - No Categories Other Description Supplied', () => {
     browserLoadedStub = sinon.stub(browser, 'loaded')
     sinon.stub(browser, 'scrollTo')
 
-    model = new Model('manchester')
+    model = new Model('barnegat')
   })
 
   afterEach(() => {
@@ -70,7 +70,7 @@ describe('Offer Items - No Categories Other Description Supplied', () => {
           'LastName': 'last',
           'Email': 'email@test.com',
           'Telephone': '',
-          'City': 'manchester',
+          'City': 'barnegat',
           'Postcode': 'postcode',
           'Description': 'description',
           'AdditionalInfo': '',
