@@ -1,12 +1,12 @@
 ---
-title: All Service Providers - Street Support
-description: Street support makes it easier to help people facing homelessness. Find help relevant to your needs.
+title: All Service Providers - HTHW
+description: HTHW makes it easier to help people facing homelessness. Find help relevant to your needs.
 image: https://streetsupport.net/assets/img/og/street-support.jpg
 layout: default.hbs
 permalink: false
-jsBundle: all-organisations-v2
+jsBundle: all-organizations-v2
 section: findhelp
-page: allorganisations
+page: allorganizations
 ---
 
 <div class="block block--breadcrumbs">
@@ -21,8 +21,8 @@ page: allorganisations
 
 {{> no-js}}
 
-{{> all-organisations/header-form showSearch="true" }}
-{{> all-organisations/view-tabs listSelected="true" }}
+{{> all-organizations/header-form showSearch="true" }}
+{{> all-organizations/view-tabs listSelected="true" }}
 
 <div class="block block--cards">
   <div class="container">
@@ -39,7 +39,7 @@ page: allorganisations
         </div>
       </div>
       <!-- /ko -->
-      {{> all-organisations/sort }}
+      {{> all-organizations/sort }}
       <div data-bind="foreach: orgsToDisplay">
           <article class="card card--brand-h card--grid-1-of-3" data-bind="attr: { 'data-cg': clientGroupKeys }">
             <div class="card__title">
@@ -58,9 +58,9 @@ page: allorganisations
       <!-- /ko -->
       <!-- ko ifnot: hasOrgs -->
       <!-- ko if: postcode -->
-      <p>Sorry, there are no organisations listed near your postcode, please try again.</p>
+      <p>Sorry, there are no organizations listed near your postcode, please try again.</p>
       <!-- /ko -->
-      <p>If you know of local organisations that could be included, please use our <a href="/register">registration form</a>.</p>
+      <p>If you know of local organizations that could be included, please use our <a href="/register">registration form</a>.</p>
       <!-- /ko -->
       <!-- ko if: postcodeRetrievalIssue -->
       <p>Sorry, there was a problem with your postcode, please try an alternative postcode nearby.</p>
