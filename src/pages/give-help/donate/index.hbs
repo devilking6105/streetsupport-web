@@ -1,6 +1,6 @@
 ---
-title: Donate money to local organisations - Street Support
-description: Street support makes it easier to help people facing homelessness. Donate via local organisations.
+title: Donate money to local organizations - HTHW
+description: HTHW makes it easier to help people facing homelessness. Donate via local organizations.
 image: https://streetsupport.net/assets/img/og/street-support.jpg
 layout: default.hbs
 permalink: false
@@ -27,17 +27,17 @@ page: donate
       <header class="multi-form-header">
         <h1 class="h1">Make a Monetary Donation</h1>
         <h2 class="h2">Donate to support local people experiencing homelessness</h2>
-        <p>The following organisations near you rely on your donations to continue their work helping people build new lives in a place they can call home.</p>
+        <p>The following organizations near you rely on your donations to continue their work helping people build new lives in a place they can call home.</p>
         <!-- ko ifnot: postcode -->
-        <p>Please enter a postcode to find organisations near you.</p>
+        <p>Please enter a postcode to find organizations near you.</p>
         <!-- /ko -->
       </header>
-      {{> all-organisations/proximity }}
+      {{> all-organizations/proximity }}
     </div>
     <div class="block__content">
       <!-- ko if: hasOrgs -->
       <!-- ko ifnot: postcodeRetrievalIssue -->
-      {{> all-organisations/sort }}
+      {{> all-organizations/sort }}
       <div class="cards__list" data-bind="foreach: orgsToDisplay">
         <article class="card card--brand-h card--grid-1-of-3">
           <div class="card__title">
@@ -63,12 +63,12 @@ page: donate
       <!-- /ko -->
       <!-- ko ifnot: hasOrgs -->
       <!-- ko if: postcode -->
-      <p>Sorry, there are no organisations listed near your postcode, please try again.</p>
+      <p>Sorry, there are no organizations listed near your postcode, please try again.</p>
       <!-- /ko -->
       <!-- ko ifnot: postcode -->
-      <p>Please enter your postcode to find organisations near you.</p>
+      <p>Please enter your postcode to find organizations near you.</p>
       <!-- /ko -->
-      <p>If you know of local organisations that could be included, please use our <a href="/register">registration form</a>.</p>
+      <p>If you know of local organizations that could be included, please use our <a href="/register">registration form</a>.</p>
       <!-- /ko -->
       <!-- ko if: postcodeRetrievalIssue -->
       <p>Sorry, there was a problem with your postcode, please try an alternative postcode nearby.</p>
