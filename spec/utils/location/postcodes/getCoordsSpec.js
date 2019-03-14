@@ -8,17 +8,17 @@ const storage = require('../../../../src/js/storage')
 
 const postcodeData = {
   'result': {
-    'postcode': 'M1 2HX',
-    'longitude': -2.232774,
-    'latitude': 53.479424
+    'postcode': '08005',
+    'longitude': -74.22289999999998,
+    'latitude': 39.7532
   }
 }
 
 const outcodeData = {
   'result': {
-    'outcode': 'PR1',
-    'longitude': -2.70180329214157,
-    'latitude': 53.7574212969406
+    'outcode': '08757',
+    'longitude': -74.19799999999998,
+    'latitude': 39.9537
   }
 }
 
