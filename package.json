@@ -1,16 +1,16 @@
 {
   "name": "streetsupport",
-  "description": "Street Support Network is a Manchester collective of support groups, charities and kind-hearted folk. We’ve joined forces to make it easier to find help, and give help, to people facing homelessness in Manchester.",
+  "description": "HTHW support charities and kind-hearted folk. We’ve joined forces to make it easier to find help, and give help, to people facing homelessness Worldwide.",
   "version": "1.0.0",
-  "author": "StreetSupport <streetsupport@objectivesfirst.com>",
+  "author": "HTHW <hthcoin@gmail.com>",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StreetSupport/streetsupport-web.git"
+    "url": "https://github.com/devilking6105/streetsupport-web.git"
   },
   "bugs": {
-    "url": "https://github.com/StreetSupport/streetsupport-web/issues"
+    "url": "http://hth.world"
   },
   "engines": {
     "node": ">= 4"
