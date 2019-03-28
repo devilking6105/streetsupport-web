@@ -49,7 +49,7 @@ fi
 THE_COMMIT=`git rev-parse HEAD`
 
 # Set git details
-git config --global user.email "enquiry@streetsupport.net"
+git config --global user.email "hthtcoin@gmail.com"
 git config --global user.name "Travis CI"
 
 # Set environment
