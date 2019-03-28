@@ -48,7 +48,7 @@
         "engine": "handlebars"
       },
       "metalsmith-mapsite": {
-        "hostname": "https://streetsupport.net"
+        "hostname": "https://scrutinytestingandmesswithcodeonly.hth.world/"
       }
     }
   }
