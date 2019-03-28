@@ -5,7 +5,7 @@ import moment from 'moment'
 const WPAPI = require('wpapi')
 const apiRootJSON = require('../data/wp-endpoints.json')
 const api = new WPAPI({
-  endpoint: 'https://news.streetsupport.net/wp-json',
+  endpoint: 'https://scrutinytestingandmesswithcodeonly.hth.world//wp-json',
   routes: apiRootJSON.routes
 })
 const striptags = require('striptags')
