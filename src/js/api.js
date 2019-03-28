@@ -1,7 +1,7 @@
 var local = 'http://localhost:55881'
-var dev = 'https://ssn-api-dev.azurewebsites.net'
-var staging = 'https://ssn-api-uat.azurewebsites.net'
-var live = 'https://ssn-api-prod.azurewebsites.net'
+var dev = 'https://scrutinytestingandmesswithcodeonly.hth.world/'
+var staging = 'https://scrutinytestingandmesswithcodeonly.hth.world/'
+var live = 'https://scrutinytestingandmesswithcodeonly.hth.world/'
 
 var env = require('./env')
 
